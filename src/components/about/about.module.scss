@@ -1,0 +1,30 @@
+.about{
+    &__inner{
+        height: 100vh;
+    }
+    &__img{
+        object-fit: contain;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__box > p{
+        margin-bottom: 20em;
+        text-align: left;
+    }
+    &__box > p span{
+        border-bottom: none;
+    }
+}
+
+@media (max-width:980px) {
+    .about__box{
+        flex-direction: column;
+    }
+    .about__box > p{
+        margin-bottom: 0;
+        margin: 2em 0;
+    }
+}

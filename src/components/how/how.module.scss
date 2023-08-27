@@ -1,0 +1,42 @@
+.how{
+    height: unset;
+    min-height: 100vh;
+    &__content{
+        margin: 110px 0;
+    }
+    &__box{
+        display: flex;
+        align-items:flex-start;
+    }
+    &__box{
+        margin-top: 48px;
+    }
+    &__box svg{
+        margin-right: 20px;
+    }
+    &__text + &__text{
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .how__content{
+        margin: 60px 0;
+    }
+}
+@media (max-width:900px) {
+    .how__text{
+        text-align: justify;
+    }
+}
+@media (max-width:440px) {
+    .how__content{
+        margin: 50px 0;
+    }
+    .how__text + .how__text{
+        margin-top: 24px;
+    }
+    .how__box{
+        margin-top: 24px;
+    }
+}
